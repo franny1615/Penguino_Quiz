@@ -3,24 +3,28 @@
 	<head>
 		<title>Penguino Quiz</title>
 		<link rel="stylesheet" type="text/css" href="penguinoStyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="answers.js"></script>
 	</head>
 	<body>
 		<h1><u>Penguino Quiz</u></h1>
-		<p>Question #1: What animal is this?</p>
+		
+		<p>Question #1: Are these Emperor Penguins?</p>
 		<img src="http://franny1615.github.io/test_webpage/EP.jpg" alt="A Penguino!" class="image3">
 		<br>
-		<input type="radio" name="q1" VALUE="y">Lemour
-		<input type="radio" name="q1" VALUE="y">Whale
-		<input type="radio" name="q1" VALUE="y">Clownfish
-		<input type="radio" name="q1" VALUE="y">Emperor Penguin
-		<p>Question #2:</p>
-		<p>Question #3:</p>
-		<p>Question #4:</p>
-		<p>Question #5:</p>
-		<p>Question #6:</p>
-		<p>Question #7:</p>
-		<p>Question #8:</p>
-		<p>Question #9:</p>
-		<p>Question #10:</p>
+		<input type="radio" name="q1" value="y1" id="y">Yes</input>
+		<input type="radio" name="q1" value="n1" id="n">No</input>
+		<p class="answer" id="yes">Correct</p>
+		<p class="answer" id="no">Incorrect</p>
+		
+		<p>Question #2:Is this a whale?</p>
+		<img src="http://franny1615.github.io/Penguino_Quiz/whaleS.jpg" alt="A Penguino!" class="image3">
+		<br>
+		<input type="radio" name="q1" value="y1" id="y">Yes</input>
+		<input type="radio" name="q1" value="n1" id="n">No</input>
+		<p class="answer" id="yes">Correct</p>
+		<p class="answer" id="no">Incorrect, this is a type of shark.</p>
+		
+		
 	</body>
 </html>
