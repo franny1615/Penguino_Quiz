@@ -8,23 +8,33 @@
 	</head>
 	<body>
 		<h1><u>Penguino Quiz</u></h1>
-		
-		<p>Question #1: Are these Emperor Penguins?</p>
-		<img src="http://franny1615.github.io/test_webpage/EP.jpg" alt="A Penguino!" class="image3">
-		<br>
-		<input type="radio" name="q1" value="y1" id="y">Yes</input>
-		<input type="radio" name="q1" value="n1" id="n">No</input>
-		<p class="answer" id="yes">Correct</p>
-		<p class="answer" id="no">Incorrect</p>
-		
-		<p>Question #2:Is this a whale?</p>
-		<img src="http://franny1615.github.io/Penguino_Quiz/whaleS.jpg" alt="A Penguino!" class="image3">
-		<br>
-		<input type="radio" name="q1" value="y1" id="y">Yes</input>
-		<input type="radio" name="q1" value="n1" id="n">No</input>
-		<p class="answer" id="yes">Correct</p>
-		<p class="answer" id="no">Incorrect, this is a type of shark.</p>
-		
-		
+		<table class="questionTable">
+			<tr id="q1">
+				<td>
+					<p>Question #1: Are these Emperor Penguins?</p>
+					<img src="http://franny1615.github.io/test_webpage/EP.jpg" alt="A Penguino!" id="image3">
+					<br>
+					<input type="radio" name="q1" value="y1" id="y">Yes</input>
+					<input type="radio" name="q1" value="n1" id="n">No</input>
+					<p class="answer" id="yes">Correct</p>
+					<p class="answer" id="no">Incorrect</p>
+					<br>
+					<button type="button" class="nextBtn">Next Question</button>
+				</td>
+			</tr>
+			<tr id="q2">
+				<td>
+					<p>Question #2:whale?</p>
+					<img src="http://franny1615.github.io/Penguino_Quiz/whaleS.jpg" alt="A Penguino!" id="image4">
+					<br>
+					<input type="radio" name="q1" value="y1" id="y">Yes</input>
+					<input type="radio" name="q1" value="n1" id="n">No</input>
+					<p class="answer" id="yes">Correct</p>
+					<p class="answer" id="no">Incorrect</p>
+					<br>
+					<button type="button" class="nextBtn">Next Question</button>
+				</td>
+			</tr>
+		</table>
 	</body>
 </html>
