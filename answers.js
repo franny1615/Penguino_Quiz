@@ -14,8 +14,10 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+	var i = 1;
 	$(".nextBtn").click(function(){
-		$("#q1").fadeOut();
-		$("#q2").fadeIn();
+		$("#q" + i).fadeOut();
+		i += 1;
+		$("#q" + i).fadeIn();
 	})
 });
