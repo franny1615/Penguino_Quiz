@@ -1,12 +1,15 @@
+body{
+	text-align:center;
+	background-image:url(http://franny1615.github.io/Penguino_Quiz/bg.jpg);
+	background-color:lightblue;
+	background-repeat:no-repeat;
+	background-size:100%;
+}
+
 h1{
 	font-family:Impact;
 	text-align:center;
 	font-size:48px;
-}
-
-body{
-	text-align:center;
-	background-image:url(http://franny1615.github.io/Penguino_Quiz/bg.jpg);
 }
 
 img{
