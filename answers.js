@@ -1,23 +1,20 @@
+var i = 1;
 $(document).ready(function(){
-	$("#y").click(function(){
-		$("#yes").fadeIn();
-		$("#no").fadeOut();
-		
+	$(".y").click(function(){
+		console.log(i);
+		$(".answer1").fadeIn();
+		$(".answer2").fadeOut();
 	})
-});
-
-$(document).ready(function(){
-	$("#n").click(function(){
-		$("#no").fadeIn();
-		$("#yes").fadeOut();
+	$(".n").click(function(){
+		console.log(i);
+		$(".answer2").fadeIn();
+		$(".answer1").fadeOut();
 	})
-});
-
-$(document).ready(function(){
-	var i = 1;
 	$(".nextBtn").click(function(){
 		$("#q" + i).fadeOut();
+		$(".answer1,.answer2").fadeOut();
 		i += 1;
 		$("#q" + i).fadeIn();
+		console.log(i);
 	})
 });

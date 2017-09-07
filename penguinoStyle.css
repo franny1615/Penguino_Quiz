@@ -10,6 +10,8 @@ body{
 
 img{
 	border:1px solid black;
+	width:350px;
+	height:300px;
 }
 
 .questionTable{
@@ -17,20 +19,10 @@ img{
 	margin-right:auto;
 }
 
-#q2,#q3,#q4,#q4,#q5,#q6,#q7,#q8,#q9,#q10{
+#q2,#q3,#q4,#q4,#q5{
 	display:none;
 }
 
-#image3{
-	width:350px;
-	height:300px;
-}
-
-#image4{
-	width:350px;
-	height:280;
-}
-
-.answer{
+.answer1,.answer2{
 	display:none;
 }
