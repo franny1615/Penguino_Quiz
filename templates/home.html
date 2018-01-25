@@ -7,24 +7,15 @@
 		<script src="{{url_for('static',filename='js/answers.js')}}"></script>
 	</head>
 	<body>	
-		<h1>
-		{% if 'q1' in session %} 
-   			Answer to first question: {{ session['q1'] }}<br>
- 		{% endif %}
-		</h1>
 		<h1><u>Aquatic Animal Quiz</u></h1>
 		<table class="questionTable">
+			<form action='/response' method="post">
 			<tr id="q1">
 				<td>
 					<p>Question #1: Are these Emperor Penguins?</p>
 					<img src="{{url_for('static',filename='img/EP.jpg')}}" alt="A Penguino!">
 					<br>
-					<input type="radio" name="q1" value="yes" class="y">Yes</input>
-					<input type="radio" name="q1" value="yes" class="n">No</input>
-					<p class="answer1">Correct</p>
-					<p class="answer2">Incorrect</p>
-					<br>
-					<button type="button" class="nextBtn" name="firstquestion">Next Question</button>
+					<input type="text" name="question1">
 				</td>
 			</tr>
 			<tr id="q2">
@@ -32,14 +23,7 @@
 					<p>Question #2:What type of whale is this?</p>
 					<img src="{{url_for('static',filename='img/whaleS.jpg')}}" alt="A Penguino!">
 					<br>
-					<input type="radio" name="q2" value="Whale Shark" class="y">Whale Shark.</input>
-					<input type="radio" name="q2" value="Whale Shark" class="n">Humpback Whale</input>
-					<input type="radio" name="q2" value="Whale Shark" class="n">Dolphin</input>
-					<input type="radio" name="q2" value="Whale Shark" class="n">Orca</input>
-					<p class="answer1">Correct</p>
-					<p class="answer2">Incorrect</p>
-					<br>
-					<button type="button" class="nextBtn">Next Question</button>
+					<input type="text" name="question2">
 				</td>
 			</tr>
 			<tr id="q3">
@@ -47,14 +31,7 @@
 					<p>Question #3:What type of fish is this?</p>
 					<img src="{{url_for('static',filename='img/tuna.jpg')}}" alt="a tuna">
 					<br>
-					<input type="radio" name="q3" value="Tuna" class="n">Bass</input>
-					<input type="radio" name="q3" value="Tuna" class="y">Tuna</input>
-					<input type="radio" name="q3" value="Tuna" class="n">Trout</input>
-					<input type="radio" name="q3" value="Tuna" class="n">Goldfish</input>
-					<p class="answer1">Correct</p>
-					<p class="answer2">Incorrect</p>
-					<br>
-					<button type="button" class="nextBtn">Next Question</button>
+					<input type="text" name="question3">
 				</td>
 			</tr>
 			<tr id="q4">
@@ -62,14 +39,7 @@
 					<p>Question #4:What type of shark is this?</p>
 					<img src="{{url_for('static',filename='img/gwhite.jpg')}}" alt="a white shark">
 					<br>
-					<input type="radio" name="q4" value="Great White" class="y">Great White</input>
-					<input type="radio" name="q4" value="Great White" class="n">Hammerhead</input>
-					<input type="radio" name="q4" value="Great White" class="n">Whale Shark</input>
-					<input type="radio" name="q4" value="Great White" class="n">Orca</input>
-					<p class="answer1">Correct</p>
-					<p class="answer2">Incorrect</p>
-					<br>
-					<button type="button" class="nextBtn">Next Question</button>
+					<input type="text" name="question4">
 				</td>
 			</tr>
 			<tr id="q5">
@@ -77,20 +47,11 @@
 					<p>Question #5:Is this a Goldfish?</p>
 					<img src="{{url_for('static',filename='img/goldfish.jpg')}}" alt="a goldfish">
 					<br>
-					<input type="radio" name="q5" value="yes" class="n">NO!</input>
-					<input type="radio" name="q5" value="yes" class="y">Yes.</input>
-					<p class="answer1">Correct</p>
-					<p class="answer2">Incorrect</p>
-					<br>
-					<button type="button" class="nextBtn">Finish Quiz</button>
+					<input type="text" name="question5">
 				</td>
 			</tr>
-			<tr id="q6">
-				<td>
-					<p>You now know more about Aquatic Life.</p>
-					<p>Congrats on completing quiz</p>
-				</td>
-			</tr>
+			<input type="submit">
+			</form>
 		</table>
 	</body>
 </html>
