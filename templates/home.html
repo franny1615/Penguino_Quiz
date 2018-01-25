@@ -6,7 +6,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="{{url_for('static',filename='js/answers.js')}}"></script>
 	</head>
-	<body>
+	<body>	
+		<h1>
+		{% if 'q1' in session %} 
+   			Answer to first question: {{ session['q1'] }}<br>
+ 		{% endif %}
+		</h1>
 		<h1><u>Aquatic Animal Quiz</u></h1>
 		<table class="questionTable">
 			<tr id="q1">
@@ -19,7 +24,7 @@
 					<p class="answer1">Correct</p>
 					<p class="answer2">Incorrect</p>
 					<br>
-					<button type="button" class="nextBtn">Next Question</button>
+					<button type="button" class="nextBtn" name="firstquestion">Next Question</button>
 				</td>
 			</tr>
 			<tr id="q2">
