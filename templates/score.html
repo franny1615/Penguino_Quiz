@@ -1,25 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
+  <h1><b>Debrief</b></h1>
   <p>
     {% if 'q1' in session %} 
       <b>Your Answer:</b> {{ session['q1'] }}<br>
-      <b>Correct Answer:</b> YES<br><br>
+      <b>Correct Answer:</b> Yes<br><br>
     {% endif %}
     {% if 'q2' in session %} 
       <b>Your Answer:</b> {{ session['q2'] }}<br>
-      <b>Correct Answer:</b> WHALE SHARK<br><br>
+      <b>Correct Answer:</b> Whale Shark<br><br>
     {% endif %}
     {% if 'q3' in session %} 
       <b>Your Answer:</b> {{ session['q3'] }}<br><br>
-      <b>Correct Answer:</b> TUNA<br>
+      <b>Correct Answer:</b> Tuna<br>
     {% endif %}
     {% if 'q4' in session %} 
      <b>Your Answer:</b> {{ session['q4'] }}<br>
-     <b>Correct Answer:</b> GREAT WHITE SHARK<br><br>
+     <b>Correct Answer:</b> Great White Shark<br><br>
     {% endif %}
     {% if 'q5' in session %} 
      <b>Your Answer:</b> {{ session['q5'] }}<br>
-     <b>Correct Answer:</b> YES<br>
+     <b>Correct Answer:</b> Yes<br>
     {% endif %}
   </p>
 {% endblock %}
