@@ -17,7 +17,7 @@ def renderMain():
     return render_template('home.html')
   
 @app.route('/starOver')
-def renderMain():
+def renderBack():
     session.clear()
     return render_template('home.html')
   
