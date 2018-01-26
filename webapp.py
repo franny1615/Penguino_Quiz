@@ -18,8 +18,11 @@ def renderMain():
   
 @app.route('/response',methods=['GET','POST'])
 def renderScore():
-    if request.form['n1'] == "YES":
-      session['score'] = 1
+    session['q1'] = request.form['n1']
+    session['q2'] = request.form['n2']
+    session['q3'] = request.form['n3']
+    session['q4'] = request.form['n4']
+    session['q5'] = request.form['n5']
     return render_template('score.html')
   
     
