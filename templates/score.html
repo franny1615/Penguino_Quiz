@@ -1,8 +1,25 @@
 {% extends "layout.html" %}
 {% block content %}
   <p>
-    {% if 'score' in session %} 
-     Score: {{ session['score'] }}<br>
+    {% if 'q1' in session %} 
+     Your Answer: {{ session['q1'] }}<br>
+     Correct Answer: YES
+    {% endif %}
+    {% if 'q2' in session %} 
+     Your Answer: {{ session['q2'] }}<br>
+     Correct Answer: WHALE SHARK
+    {% endif %}
+    {% if 'q3' in session %} 
+    Your Answer: {{ session['q3'] }}<br>
+     Correct Answer: TUNA
+    {% endif %}
+    {% if 'q4' in session %} 
+     Your Answer: {{ session['q4'] }}<br>
+     Correct Answer: GREAT WHITE SHARK
+    {% endif %}
+    {% if 'q5' in session %} 
+     Your Answer: {{ session['q5'] }}<br>
+     Correct Answer: YES
     {% endif %}
   </p>
 {% endblock %}
