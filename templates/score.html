@@ -2,24 +2,24 @@
 {% block content %}
   <p>
     {% if 'q1' in session %} 
-     Your Answer: {{ session['q1'] }}<br>
-     Correct Answer: YES<br>
+      <b>Your Answer:</b> {{ session['q1'] }}<br>
+      <b>Correct Answer:</b> YES<br><br>
     {% endif %}
     {% if 'q2' in session %} 
-     Your Answer: {{ session['q2'] }}<br>
-     Correct Answer: WHALE SHARK<br>
+      <b>Your Answer:</b> {{ session['q2'] }}<br>
+      <b>Correct Answer:</b> WHALE SHARK<br><br>
     {% endif %}
     {% if 'q3' in session %} 
-    Your Answer: {{ session['q3'] }}<br>
-     Correct Answer: TUNA<br>
+      <b>Your Answer:</b> {{ session['q3'] }}<br><br>
+      <b>Correct Answer:</b> TUNA<br>
     {% endif %}
     {% if 'q4' in session %} 
-     Your Answer: {{ session['q4'] }}<br>
-     Correct Answer: GREAT WHITE SHARK<br>
+     <b>Your Answer:</b> {{ session['q4'] }}<br>
+     <b>Correct Answer:</b> GREAT WHITE SHARK<br><br>
     {% endif %}
     {% if 'q5' in session %} 
-     Your Answer: {{ session['q5'] }}<br>
-     Correct Answer: YES<br>
+     <b>Your Answer:</b> {{ session['q5'] }}<br>
+     <b>Correct Answer:</b> YES<br>
     {% endif %}
   </p>
 {% endblock %}
