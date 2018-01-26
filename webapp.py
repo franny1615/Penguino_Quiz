@@ -18,6 +18,7 @@ def renderMain():
   
 @app.route('/response',methods=['GET','POST'])
 def renderScore():
+    session.clear()
     if request.form['n1'] == "YES":
       session['score'] = 1
     return render_template('score.html')
