@@ -16,6 +16,11 @@ app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.
 def renderMain():
     return render_template('home.html')
   
+@app.route('/starOver')
+def renderMain():
+    session.clear()
+    return render_template('home.html')
+  
 @app.route('/response',methods=['GET','POST'])
 def renderScore():
     session['q1'] = request.form['n1']
