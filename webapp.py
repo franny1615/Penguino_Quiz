@@ -18,7 +18,7 @@ def renderMain():
   
 @app.route('/response',methods=['GET','POST'])
 def renderScore():
-    return render_template('home.html')
+    return render_template('score.html')
   
     
 if __name__=="__main__":
