@@ -24,6 +24,7 @@
     {% endif %}
     {% if 'score' in session %} 
      <b>Score: </b> {{ session['score'] }}<br>
+     <b>Personal Best: </b> {{ highest }} <br>
     {% endif %}
   </p>
   <a href="/startOver">Start over</a>
