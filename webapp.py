@@ -40,7 +40,8 @@ def renderScore():
       session['score'] += 1
     if request.form['n5'] == "yes":
       session['score'] += 1
-    highscore = session['score']
+    if session['score'] > highscore:
+      highscore = session['score']
     return render_template('score.html', highest = highscore)
   
     
