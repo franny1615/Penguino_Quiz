@@ -22,6 +22,9 @@
      <b>Your Answer:</b> {{ session['q5'] }}<br>
      <b>Correct Answer:</b> Yes<br>
     {% endif %}
+    {% if 'score' in session %} 
+     <b>Score: </b> {{ session['score'] }}<br>
+    {% endif %}
   </p>
   <a href="/startOver">Start over</a>
 {% endblock %}
