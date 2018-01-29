@@ -28,7 +28,7 @@ def renderScore():
     session['q3'] = request.form['n3']
     session['q4'] = request.form['n4']
     session['q5'] = request.form['n5']
-    if request.form['n1'] == "YES":
+    if request.form['n1'] == "yes":
       session['score'] = 1
     return render_template('score.html')
   
