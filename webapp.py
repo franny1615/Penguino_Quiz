@@ -11,7 +11,8 @@ app = Flask(__name__)
 
 app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
                                      #The value should be set in Heroku (Settings->Config Vars).  
-
+highscore = 0
+  
 @app.route('/')
 def renderMain():
     return render_template('home.html')
@@ -39,7 +40,8 @@ def renderScore():
       session['score'] += 1
     if request.form['n5'] == "yes":
       session['score'] += 1
-    return render_template('score.html')
+    highscore = session['score']
+    return render_template('score.html', highest = highscore)
   
     
 if __name__=="__main__":
