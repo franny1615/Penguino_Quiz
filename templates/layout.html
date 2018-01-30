@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Aquatic Animal Quiz</title>
+		<title>Fish</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/penguinoStyle.css')}}">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="favicon icon" href="{{url_for('static',filename='img/fav.ico')}}">
+		<script src="{{url_for('static',filename='js/qswitch.js')}}"></script>
 	</head>
 	<body>	
 		{% block content %}{% endblock %}

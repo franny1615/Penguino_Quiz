@@ -1,51 +1,71 @@
 {% extends "layout.html" %}
 {% block content %}
-		<h1><u>Aquatic Animal Quiz</u></h1>
+		<br>
+		<h1>Penguino Quiz</h1>
 		<table class="questionTable">
 			<form action='/response' method="post">
 			<tr id="q1">
 				<td>
-					<p>Question #1: Are these Emperor Penguins?</p>
+					<br>
+					<p>Are these Emperor Penguins?</p>
 					<img src="{{url_for('static',filename='img/EP.jpg')}}" alt="A Penguino!">
 					<br>
-					<input type="text" name="n1">
+					<br>
+					<input type="text" name="n1" class="form-control" placeholder="Your Answer!">
+					<br>
+					<button type="button" class="btn btn-info nq">Next</button>
 				</td>
 			</tr>
 			<tr id="q2">
 				<td>
-					<p>Question #2:What type of whale is this?</p>
+					<br>
+					<p>What type of whale is this?</p>
 					<img src="{{url_for('static',filename='img/whaleS.jpg')}}" alt="A Penguino!">
 					<br>
-					<input type="text" name="n2">
+					<br>
+					<input type="text" name="n2" class="form-control" placeholder="Your Answer!">
+					<br>
+					<button type="button" class="btn btn-danger pq">Previous</button>
+					<button type="button" class="btn btn-info nq">Next</button>
 				</td>
 			</tr>
 			<tr id="q3">
 				<td>
-					<p>Question #3:What type of fish is this?</p>
+					<br>
+					<p>What type of fish is this?</p>
 					<img src="{{url_for('static',filename='img/tuna.jpg')}}" alt="a tuna">
 					<br>
-					<input type="text" name="n3">
+					<br>
+					<input type="text" name="n3" class="form-control" placeholder="Your Answer!">
+					<br>
+					<button type="button" class="btn btn-danger pq">Previous</button>
+					<button type="button" class="btn btn-info nq">Next</button>
 				</td>
 			</tr>
 			<tr id="q4">
 				<td>
-					<p>Question #4:What type of shark is this?</p>
+					<br>
+					<p>What type of shark is this?</p>
 					<img src="{{url_for('static',filename='img/gwhite.jpg')}}" alt="a white shark">
 					<br>
-					<input type="text" name="n4">
+					<br>
+					<input type="text" name="n4" class="form-control" placeholder="Your Answer!">
+					<br>
+					<button type="button" class="btn btn-danger pq">Previous</button>
+					<button type="button" class="btn btn-info nq">Next</button>
 				</td>
 			</tr>
 			<tr id="q5">
 				<td>
-					<p>Question #5:Is this a Goldfish?</p>
+					<br>
+					<p>Is this a Goldfish?</p>
 					<img src="{{url_for('static',filename='img/goldfish.jpg')}}" alt="a goldfish">
 					<br>
-					<input type="text" name="n5">
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<input type="submit">
+					<br>
+					<input type="text" name="n5" class="form-control" placeholder="Your Answer!">
+					<br>
+					<button type="button" class="btn btn-danger pq">Previous</button>
+					<input type="submit" class="btn btn-primary">
 				</td>
 			</tr>
 			</form>

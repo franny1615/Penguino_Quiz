@@ -8,15 +8,18 @@ input{
 }
 
 h1{
-	font-family:Impact;
 	text-align:center;
 	font-size:48px;
 }
 
 img{
-	border:1px solid black;
+	border-radius:10px;
 	width:350px;
 	height:300px;
+}
+
+#q2,#q3,#q4,#q5{
+	display:none;
 }
 
 .questionTable{
